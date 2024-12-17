@@ -17,5 +17,3 @@ class MyModel(nn.Module):
         x = self.flatten(x)
         logits = self.network(x)
         return logits
-
-model = models.MyModel()
