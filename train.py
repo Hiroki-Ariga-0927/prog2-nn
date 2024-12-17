@@ -15,14 +15,16 @@ ds_train = datasets.FashionMNIST(
     root='data',
     train=True,
     download=True,
-    transformds=ds_transform
+    transform=ds_transform  
+
 )
 
 ds_test = datasets.FashionMNIST(
     root='data',
     train=False,
     download=True,
-    transformds=ds_transform
+    transform=ds_transform  
+
 )
 
 batch_size = 64
